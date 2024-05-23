@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center w-100 mt-5">
+    <div class="form-bg">
+      <form [formGroup]="addTaskForm" (submit)="onAddTask()">
+        <h1>Add Todo</h1>
+        <div>
+          <label for="description">Description </label>
+          <br />
+          <input
+            required
+            type="text"
+            id="description"
+            name="description"
+            formControlName="description"
+            class="form-control"
+          />
+        </div>
+        <br />
+  
+        <div class="text-center">
+          <button
+            [disabled]="!this.addTaskForm.touched && !this.addTaskForm.valid"
+            type="button"
+            class="btn btn-info add-todo"
+            type="submit"
+          >
+            Add Todo
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+.form-bg {
+    background-color: hsl(221, 82%, 65%);
+    height: 60vh;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-todo {
+    border: none;
+    background-color: #f58fdd;
+    color: #3776a0;
+    font-weight: 600;
+}

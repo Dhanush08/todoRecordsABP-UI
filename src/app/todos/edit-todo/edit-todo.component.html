@@ -1,0 +1,56 @@
+<div class="bg-color">
+    <div class="d-flex justify-content-center w-100 mt-5">
+      <div class="form-bg">
+        <form [formGroup]="editTaskForm" (submit)="onUpdateTask()">
+          <h1>Add Todo</h1>
+          <br />
+          <div>
+            <label for="description">Description </label>
+            <br />
+            <input
+              required
+              type="text"
+              id="description"
+              name="description"
+              formControlName="description"
+              class="form-control"
+            />
+          </div>
+          <br />
+  
+          <div>
+            <label for="status">Is Fullfilled </label>
+            <br />
+            <input
+              type="radio"
+              [value]="true"
+              id="status"
+              name="isFullfilled"
+              formControlName="isFullfilled"
+            />
+            complete
+            <input
+              type="radio"
+              [value]="false"
+              id="status"
+              name="isFullfilled"
+              formControlName="isFullfilled"
+            />
+            in progress
+          </div>
+          <br />
+  
+          <div class="text-center">
+            <button
+              [disabled]="!this.editTaskForm.touched && !this.editTaskForm.valid"
+              type="button"
+              class="btn btn-info add-todo"
+              type="submit"
+            >
+              Edit Todo
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

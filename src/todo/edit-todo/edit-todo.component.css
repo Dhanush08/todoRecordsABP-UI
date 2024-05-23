@@ -1,0 +1,19 @@
+.form-bg {
+    background-color: #afe4ec;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    padding: 40px;
+    height: 60vh;
+  }
+  .add-todo {
+    background-color: #e16ad1;
+    color: #0e1991;
+    font-weight: 600;
+    border: none;
+  }
+  .bg-color {
+    background-color: #000000;
+  }

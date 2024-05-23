@@ -1,0 +1,63 @@
+<div class="bg-app">
+    <div class="container my-5">
+      <div *ngIf="!isLoading">
+        <div
+          class="d-flex justify-content-between m-3 p-2 text-center todo-container"
+          *ngFor="let task of inProgressTasks"
+        >
+          <!-- Checkbox container -->
+          <div class="d-flex ms-4">
+            <input
+              class="form-check-input me-2 mt-2"
+              type="checkbox"
+              id="status"
+              [disabled]="true"
+              [value]="task.isFullfilled"
+              [checked]="task.isFullfilled"
+              (change)="onCheckboxTriggered($event)"
+            />
+            <p class="ms-3 mt-1 todo-description">{{ task.description }}</p>
+          </div>
+          <div class="mt-2">
+            <span
+              class="badge rounded-pill text-bg-info"
+              [ngClass]="task.isFullfilled ? 'completed' : 'in-progress'"
+              >{{ task.isFullfilled ? "completed" : "in progress" }}</span
+            >
+          </div>
+          <div>
+            <button
+              [disabled]="true"
+              type="button"
+              class="btn ctr-btn"
+              (click)="onEditTask(task)"
+            >
+              Edit
+            </button>
+            <button
+              [disabled]="true"
+              type="button"
+              class="btn ctr-btn"
+              (click)="onDeleteTask(task.id)"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        *ngIf="inProgressTasks.length === 0 && !isLoading"
+        class="text-center no-tasks"
+      >
+        No InProgress todos available
+      </div>
+      <div
+        *ngIf="isLoading"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <div class="spinner-border loader-color" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>

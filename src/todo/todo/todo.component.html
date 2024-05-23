@@ -1,0 +1,36 @@
+<div class="bg-app">
+    <!-- todo nav bar -->
+    <div class="container d-flex justify-content-between p-3 nav-container">
+      <div class="fs-2 fw-bold">Todo</div>
+      <ul class="d-flex justify-content-between lh-lg un-list">
+        <li class="nav-item">
+          <a
+            class="nav-link me-3 fw-semibold"
+            routerLink="todo-records"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >TodoList</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link me-3 fw-semibold"
+            routerLink="in-progress"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >InProgress</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link me-3 fw-semibold"
+            routerLink="completed"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Completed</a
+          >
+        </li>
+      </ul>
+    </div>
+    <router-outlet></router-outlet>
+  </div>

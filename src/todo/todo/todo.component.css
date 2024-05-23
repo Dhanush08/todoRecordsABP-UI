@@ -1,0 +1,21 @@
+.bg-app {
+    background-color: #041f52;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  .nav-bg-color {
+    background-color: #649cdd !important;
+    color: #0f33b4 !important;
+  }
+  .active {
+    color: #0f33b4 !important;
+    font-weight: 700 !important;
+    font-size: 16px;
+  }
+  .un-list {
+    list-style-type: none;
+  }
+  .nav-container {
+    background-color: #649cdd;
+    border-radius: 10px;
+  }

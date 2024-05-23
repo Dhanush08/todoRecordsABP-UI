@@ -1,0 +1,70 @@
+.todo-container {
+    background-color: #e6cde7;
+    border-radius: 10px;
+  }
+  
+  .add-todo {
+    background-color: #a56ae1;
+    color: #400e91;
+    font-weight: 600;
+    border: none;
+  }
+  
+  .completed {
+    background-color: #dd6c6c !important;
+    color: #960909 !important;
+    font-weight: 500 !important;
+  }
+  
+  .in-progress {
+    background-color: #acf8b8 !important;
+    color: #136620 !important;
+    font-weight: 500 !important;
+  }
+  
+  .ctr-btn {
+    color: #400e91;
+    font-weight: 500;
+  }
+  .ctr-btn:hover {
+    color: #400e91;
+    font-weight: 700;
+    /* font-size: 20px; */
+  }
+  
+  .todo-heading {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .todo-description {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .no-tasks {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  .loader-color {
+    color: #ecafe9;
+  }
+  .adjust-height {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 385px;
+  }
+  .number-task {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .not-found-text {
+    color: #ecafe9;
+    font-size: 20px;
+  }
+  /* back color */
+  .bg-app {
+    background-color: #3f7def;
+    height: 100vh;
+    padding-top: 20px;
+  }
